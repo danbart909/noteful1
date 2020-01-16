@@ -50,7 +50,7 @@ export default class NoteListMain extends React.Component {
           className='NoteListMain__add-note-button'
           onClick={this.handleFolderDelete}
         >
-          <FontAwesomeIcon icon='minus' />
+          Delete
           <br />
           Folder
         </CircleButton>
