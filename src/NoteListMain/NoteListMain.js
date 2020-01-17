@@ -41,7 +41,7 @@ export default class NoteListMain extends React.Component {
   showDeleteFolder = () => {
     const folderId = this.props.match.params.folderId
     const anynote = this.context.notes.some(n => n.folderId === folderId)
-    if (!anynote) {
+    if (!anynote && folderId) {
       return (
         <CircleButton
           tag={Link}
